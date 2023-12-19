@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1,
+        "name": "Juan Carlos",
+        "image": "https://res.cloudinary.com/ddflkwfsr/image/upload/v1688597039/academlo-tours/john-doe-image.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Wilfren",
+        "image": "https://res.cloudinary.com/ddflkwfsr/image/upload/v1688491514/academlo-tours/Eldridge%20Rase-image.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Valentina",
+        "image": "https://res.cloudinary.com/ddflkwfsr/image/upload/v1687991063/academlo-tours/Remona-Edrada-image.jpg"
+    }
+]
