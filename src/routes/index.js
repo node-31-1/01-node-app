@@ -1,4 +1,5 @@
 const team = require('../team.json');
+const projects = require('../projects.json');
 const express = require('express');
 const router = express.Router();
 
@@ -17,7 +18,8 @@ router.get('/team', (req, res) => {
 
 router.get('/team/:name', (req, res) => {
     const { name } = req.params;
-    res.render('team-member', { name });
+    const teamMember = team.find(member => member.name === name);
+    res.render('team-member', { name, teamMember });
 });
 
 router.get('/about-me', (req, res) => {
@@ -25,12 +27,13 @@ router.get('/about-me', (req, res) => {
 });
 
 router.get('/projects', (req, res) => {
-    res.render('projects');
+    res.render('projects', { projects });
 });
 
 router.get('/projects/:id', (req, res) => {
     const { id } = req.params;
-    res.render('project-detail', { id })
+    const project = projects.find(project => project.id === +id);
+    res.render('project-detail', { id, project })
 });
 
 module.exports = router;

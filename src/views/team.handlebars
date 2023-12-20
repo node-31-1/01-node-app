@@ -2,6 +2,10 @@
 
 <ul>
     {{#each team}}
-        <li>{{this.name}}</li>
+        <li>
+            <a href="/team/{{this.name}}">
+                {{this.name}}
+            </a>
+        </li>
     {{/each}}
 </ul>
